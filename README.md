@@ -1,24 +1,38 @@
-# README
+# SampleApp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A modern Ruby on Rails application using:
 
-Things you may want to cover:
+- ✅ Ruby on Rails 7
+- 🐘 PostgreSQL
+- 🎨 Tailwind CSS
+- 🧼 RuboCop for code quality
+- 🐳 Docker & Docker Compose for development
+- 🔐 SSH/GitHub setup
 
-* Ruby version
+---
 
-* System dependencies
+## 🚀 Getting Started
 
-* Configuration
+### 1. Clone the Repository
 
-* Database creation
+#### Using SSH:
 
-* Database initialization
+```bash
+git clone git@github.com:tim-gauguet/sampleapp.git
+cd sampleapp
 
-* How to run the test suite
+### 2. Build Docker Containers
 
-* Services (job queues, cache servers, search engines, etc.)
+docker-compose build
 
-* Deployment instructions
+### 3. Start the app
 
-* ...
+docker-compose up
+
+### 4. Setup database
+
+docker-compose run web bin/rails db:create db:migrate
+
+
+Rails should now be running at:
+➡️ http://localhost:3000
